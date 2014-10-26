@@ -1,0 +1,483 @@
+<html>
+<head>
+<title>Plim Mecânicos, Serviços Mecânicos a Domicílio</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="R.I. Serviços Digitais" />
+
+<link rel="shortcut icon" href="resources/images/gt_favicon.png" />
+
+<link rel="stylesheet" type="text/css"
+	href="resources/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css"
+	href="resources/css/font-awesome.min.css" />
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" media="screen"
+	href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" />
+
+<!-- Custom styles for our template -->
+<link rel="stylesheet" type="text/css"
+	href="resources/css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/main.css" />
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+<style type="text/css">
+.popover-content,.popover-title {
+	color: #000
+}
+
+#head {
+	padding-top: 80px;
+}
+
+.escolha{
+	cursor: pointer;
+}
+
+.escolha{
+	color: #5bc0de;
+	text-decoration: none;
+	background-color: #f5f5f5;
+}
+
+.escolha:hover, .escolha-active{
+	background-color: #5bc0de;
+	color: #FFFFFF;
+}
+
+/* Credit Card Form */
+.usable-creditcard-form, .usable-creditcard-form * {
+    font-size: 13px;
+}
+.usable-creditcard-form {
+    position: relative;
+    padding: 0px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.usable-creditcard-form .wrapper {
+    border: 1px solid #CCC;
+    border-top: 1px solid #AAA;
+    border-right: 1px solid #AAA;
+    height: 74px;
+    width: 300px;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.usable-creditcard-form .input-group {
+    position: absolute;
+    top: 300px;
+}
+.usable-creditcard-form .input-group.nmb_a {
+    position: absolute;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+}
+.usable-creditcard-form .input-group.nmb_b {
+    position: absolute;
+    width: 100px;
+    top: 0px;
+    right: 0px;
+}
+.usable-creditcard-form .input-group.nmb_b input,
+.usable-creditcard-form .input-group.nmb_d input {
+    text-align: center;
+}
+.usable-creditcard-form .input-group.nmb_c {
+    position: absolute;
+    width: 200px;
+    top: 37px;
+    left: 0px;
+}
+.usable-creditcard-form .input-group.nmb_d {
+    position: absolute;
+    width: 100px;
+    top: 37px;
+    right: 0px;
+}
+.usable-creditcard-form input {
+    background: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0px;
+    padding-left: 35px;
+    border: none;
+}
+.usable-creditcard-form .input-group .icon {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #CCC;
+    left: 8px;
+    top: 7px;
+}
+.usable-creditcard-form .input-group.nmb_a input {
+    border-right: 1px solid #ECECEC;
+}
+.usable-creditcard-form .input-group.nmb_c input {
+    border-top: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
+}
+
+.usable-creditcard-form input::-webkit-input-placeholder {
+    font-size: 12px;
+    text-transform: none;
+}
+.usable-creditcard-form .input-group.nmb_d input {
+    border-top: 1px solid #ECECEC;
+}
+
+.usable-creditcard-form .input-group.nmb_c input {
+    text-transform: uppercase;
+}
+.usable-creditcard-form .accept {
+    color: #999;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.usable-creditcard-form .footer {
+    margin-top: 3px;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.usable-creditcard-form .footer img {
+    padding: 0px;
+    margin: 0px;
+}
+.usable-creditcard-form .iugu-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* Do not forget to store your images in a secure server */
+.usable-creditcard-form .input-group .icon.ccic-name {
+    background: url("http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/ccic-name.1cafa1882fdd56f8425de54a5a5bbd1e.png") no-repeat;
+}
+.usable-creditcard-form .input-group .icon.ccic-exp {
+    background: url("http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/ccic-exp.05e708b1489d5e00c871f20ba33bbff3.png") no-repeat;
+}
+.usable-creditcard-form .input-group .icon.ccic-brand {
+    background: url("http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/ccic-brands.48dba03883007f86e118f683dcfc4297.png") no-repeat;
+}
+.usable-creditcard-form .input-group .icon.ccic-cvv { background: url("http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/ccic-cvv.1fe78dcc390427094bdc14dedea10f34.png") no-repeat; }
+
+.usable-creditcard-form .input-group .icon.ccic-cvv,
+.usable-creditcard-form .input-group .icon.ccic-brand
+{
+    -webkit-transition:background-position .2s ease-in;
+    -moz-transition:background-position .2s ease-in;
+    -o-transition:background-position .2s ease-in;
+    transition:background-position .2s ease-in;
+}
+
+.amex .usable-creditcard-form .input-group .icon.ccic-cvv {
+    background-position: 0px -22px;
+}
+
+.amex .usable-creditcard-form .input-group .icon.ccic-brand {
+    background-position: 0px -110px;
+}
+
+.visa .usable-creditcard-form .input-group .icon.ccic-brand {
+    background-position: 0px -22px;
+}
+
+.diners .usable-creditcard-form .input-group .icon.ccic-brand {
+    background-position: 0px -88px;
+}
+
+.mastercard .usable-creditcard-form .input-group .icon.ccic-brand {
+    background-position: 0px -66px;
+}
+
+/* Non Credit Card Form - Token Area */
+.token-area {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px dotted #CCC;
+    display: block;
+    padding: 20px;
+    background: #EFEFEF;
+}
+
+</style>
+
+</head>
+<body onload="obterEnderecoRequest()">
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom"
+		style="background: #019AA2">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img
+					src="resources/images/logo-2.png" alt="Plim Mecânicos" /></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<!--	<li><a href="orcamento.html" class="btn">Solicite um orçamento?</a></li> -->
+					<li><h5 class="widget-title"
+							style="color: white; font-size: 15px; padding-top: 5px;">
+							Fale Conosco : (11) 2018-1788 <br>
+						</h5></li>
+
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- /.navbar -->
+	<!-- Highlights - jumbotron -->
+	<div class="top-space" style="padding-top:30px">
+		<div class="container">
+			<h2 class="text-left thin" style="color: #019AA2;">Pagamento de serviços mecânicos</h2>
+			
+
+			<div class="row">
+            
+            <div class="col-sm-6 credit-card-payment">
+                <form id="payment-form" action="/checkout/pay" method="POST">
+                    <div class="usable-creditcard-form">
+                        <div class="wrapper">
+                            <div class="input-group nmb_a" >
+                                <div class="icon ccic-brand"></div>
+                                <input autocomplete="off" class="credit_card_number" data-iugu="number" placeholder="Número do Cartão" type="text" value="" />
+                            </div>
+                            <div class="input-group nmb_b">
+                                <div class="icon ccic-cvv"></div>
+                                <input autocomplete="off" class="credit_card_cvv" data-iugu="verification_value" placeholder="CVV" type="text" value="" />
+                            </div>
+                            <div class="input-group nmb_c">
+                                <div class="icon ccic-name"></div>
+                                <input class="credit_card_name" data-iugu="full_name" placeholder="Titular do Cartão" type="text" value="" />
+                            </div>
+                            <div class="input-group nmb_d">
+                                <div class="icon ccic-exp"></div>
+                                <input autocomplete="off" class="credit_card_expiration" data-iugu="expiration" placeholder="MM/AA" type="text" value="" />
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <img src="http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/cc-icons.e8f4c6b4db3cc0869fa93ad535acbfe7.png" alt="Visa, Master, Diners. Amex" border="0" /> <a class="iugu-btn" href="http://iugu.com" tabindex="-1">
+                <img src="http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/payments-by-iugu.1df7caaf6958f1b5774579fa807b5e7f.png" alt="Pagamentos por Iugu" border="0" />
+              </a>
+                        </div>
+                    </div>
+                    <input type="hidden" name="token" id="token" value="db5179e74fb77ed826715f49c168e7d5" readonly="true" size="64" style="text-align:center" />
+                    <div class="submit-div">
+                        <button type="submit" class="btn btn-primary" style="width:100%">Concluir meu pedido</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-sm-6">
+               <div class="well">
+							<h4>
+								Dados do Pedido
+							</h4>
+							<p><strong>Tipo de veículo:</strong><span class="pull-right pedido_tipo_veiculo"></span></p>
+							<p><strong>Montadora:</strong> <span class="pull-right pedido_montadora" ></span></p>
+							<p><strong>Veículo:</strong> <span class="pull-right pedido_veiculo"></span></p>
+							<p><strong>Ano:</strong> <span class="pull-right pedido_ano"></span></p>
+							<p><strong>Detalhes:</strong> <span class="pull-right pedido_detalhes"></span></p>
+							<p><strong>Telefone:</strong> <span class="pull-right pedido_telefone"></span></p>
+							<p><strong>Email:</strong> <span class="pull-right pedido_email"></span></p>
+							<p><strong>Endereço:</strong> <span class="pull-right pedido_endereco"></span></p>
+							<p><strong>Bairro:</strong> <span class="pull-right pedido_bairro"></span></p>
+							<p><strong>Cidade:</strong> <span class="pull-right pedido_cidade"></span></p>
+					</div>
+            </div>
+        </div>
+
+			<div class="row highlight">
+				
+				<div class="col-md-4 col-sm-6 highlight">
+					
+				</div>
+			<!-- /row  -->
+
+			
+	</div>
+	</div>
+	<!-- container -->
+	<!-- Fim Conteudo -->
+	<!--Footer  -->
+	<div id="footer">
+		<div class="footer1" style="background-color: #019AA2; color: white;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Alguma dúvida?</h3>
+						<div class="widget-body">
+							<p>
+								(11) 2018-1788<br /> <a
+									href="mailto:contato@plimmecanicos.com.br">contato@plimmecanicos.com.br</a><br />
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6 widget"></div>
+				</div>
+				<!-- /row of widgets -->
+			</div>
+		</div>
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 widget">
+						<div class="widget-body"></div>
+					</div>
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2014, Plim Mecânicos. Designed by <a
+									href="http://riservicosdigitais.com.br/" rel="designer">R.I.
+									Serviços Digitais</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /row of widgets -->
+			</div>
+		</div>
+	</div>
+
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script
+		src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="resources/js/headroom.min.js"></script>
+	<script src="resources/js/jQuery.headroom.min.js"></script>
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<!-- start iugu -->
+	<script type="text/javascript" src="https://js.iugu.com/v2"></script>
+	<script src="resources/js/iuguPayment.js"></script>
+	<!-- end iugu -->
+	<script src="resources/js/template.js"></script>
+	<script src="resources/js/formater.js"></script>
+
+	<!-- begin olark code -->
+	<script data-cfasync="false" type='text/javascript'>
+		/*<![CDATA[*/window.olark
+				|| (function(c) {
+					var f = window, d = document, l = f.location.protocol == "https:" ? "https:"
+							: "http:", z = c.name, r = "load";
+					var nt = function() {
+						f[z] = function() {
+							(a.s = a.s || []).push(arguments)
+						};
+						var a = f[z]._ = {}, q = c.methods.length;
+						while (q--) {
+							(function(n) {
+								f[z][n] = function() {
+									f[z]("call", n, arguments)
+								}
+							})(c.methods[q])
+						}
+						a.l = c.loader;
+						a.i = nt;
+						a.p = {
+							0 : +new Date
+						};
+						a.P = function(u) {
+							a.p[u] = new Date - a.p[0]
+						};
+						function s() {
+							a.P(r);
+							f[z](r)
+						}
+						f.addEventListener ? f.addEventListener(r, s, false)
+								: f.attachEvent("on" + r, s);
+						var ld = function() {
+							function p(hd) {
+								hd = "head";
+								return [ "<",hd,"></",hd,"><", i,
+										' onl' + 'oad="var d=', g,
+										";d.getElementsByTagName('head')[0].",
+										j, "(d.", h, "('script')).", k, "='",
+										l, "//", a.l, "'", '"', "></",i,">" ]
+										.join("")
+							}
+							var i = "body", m = d[i];
+							if (!m) {
+								return setTimeout(ld, 100)
+							}
+							a.P(1);
+							var j = "appendChild", h = "createElement", k = "src", n = d[h]
+									("div"), v = n[j](d[h](z)), b = d[h]
+									("iframe"), g = "document", e = "domain", o;
+							n.style.display = "none";
+							m.insertBefore(n, m.firstChild).id = z;
+							b.frameBorder = "0";
+							b.id = z + "-loader";
+							if (/MSIE[ ]+6/.test(navigator.userAgent)) {
+								b.src = "javascript:false"
+							}
+							b.allowTransparency = "true";
+							v[j](b);
+							try {
+								b.contentWindow[g].open()
+							} catch (w) {
+								c[e] = d[e];
+								o = "javascript:var d=" + g
+										+ ".open();d.domain='" + d.domain
+										+ "';";
+								b[k] = o + "void(0);"
+							}
+							try {
+								var t = b.contentWindow[g];
+								t.write(p());
+								t.close()
+							} catch (x) {
+								b[k] = o
+										+ 'd.write("'
+										+ p().replace(/"/g,
+												String.fromCharCode(92) + '"')
+										+ '");d.close();'
+							}
+							a.P(2)
+						};
+						ld()
+					};
+					nt()
+				})({
+					loader : "static.olark.com/jsclient/loader0.js",
+					name : "olark",
+					methods : [ "configure", "extend", "declare", "identify" ]
+				});
+		/* custom configuration goes here (www.olark.com/documentation) */
+		olark.identify('3667-651-10-8161');/*]]>*/
+	</script>
+	<noscript>
+		<a href="https://www.olark.com/site/3667-651-10-8161/contact"
+			title="Contact us" target="_blank">Questions? Feedback?</a> powered
+		by <a href="http://www.olark.com?welcome"
+			title="Olark live chat software">Olark live chat software</a>
+	</noscript>
+	<!-- end olark code -->
+	
+	
+	
+	</body>
+</html>
