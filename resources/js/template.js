@@ -82,6 +82,14 @@ jQuery(document).ready(function($) {
 
 
 function pedido(){
+	 var parametros = $("#select_problema").val();
+
+	 if ($("#select_problema").val() === "selecione_o_problema") {
+	 	$("#problema").css("display","block");
+	 	return false;
+	 };
+	 
+	 /*
 
 	 if($("#email").val() === ""){
 	 	$("#email_invalido").css("display","block");
@@ -92,13 +100,12 @@ function pedido(){
 	 	return false;
 	 }
 
-	 var parametros = 
 	 "tipoDeLogradouro="+ cep.tipoDeLogradouro+ 
 	 "&logradouro=" +cep.logradouro +
 	 "&bairro=" + cep.bairro + 
 	 "&cidade=" + cep.cidade +
 	 "&estado=" + cep.estado +
-	 "&email=" +$("#email").val() ;
+	 "&email=" +$("#email").val() ;*/
 
 	return location.href='orcamento.html?' + parametros;
 	
@@ -230,6 +237,10 @@ function obterEnderecoRequest() {
 
 	preencherPedido();
 }
+
+$('#nao-sei').click( function(){
+	$('#modal-ligueme').modal('show');
+})
 
 function obterCep(){
 		$('#modal-load').modal('show');

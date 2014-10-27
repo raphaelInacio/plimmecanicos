@@ -80,15 +80,13 @@ background-color: #f5f5f5;
 				<img src="resources/images/logo-2.png" alt="Plim Mecânicos" /></a>
 			</div>
 			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav pull-right">
-					<!--	<li><a href="orcamento.html" class="btn">Solicite um orçamento?</a></li> -->
-					<li><h5 class="widget-title"
-							style="font-weight: bold; color: white; font-size: 15px; padding-top: 5px;">
-							Fale Conosco : (11) 2018-1788 <br>
-						</h5></li>
-
-				</ul>
-			</div>
+			 	<ul class="nav navbar-nav navbar-right">
+	         	   <li class="active"><a href="index.html">Inicio</a></li>
+	         	   <li><a href="quem-somos.html">Quem Somos</a></li>
+	         	   <li><a href="parceiros.html">Você tem um mecânica?</a></li>
+	         	   <li><a href="dontato.html">Fale conosco</a></li>
+         	 	</ul>
+         	 </div>
 			<!--/.nav-collapse -->
 		</div>
 	</div>
@@ -98,16 +96,16 @@ background-color: #f5f5f5;
 	<div id="head">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 page-header text-center">
+				<div class="col-sm-12 text-center">
+					<!--<div class="row">
 						<h1 class="lead"
-							style="color: white; font-weight: bold; font-size: 41px; text-shadow: 1px 1px 5px #575353;">
-							SAIBA QUANTO CUSTA O REPARO DO SEU VEÍCULO SEM SAIR DE CASA, SOLICITE UM ORÇAMENTO É GRÁTIS!
-							<!--O <font style="color: rgb(255, 255, 22);">MECÂNICO</font>
-							PARA A HORA QUE <font style="color: rgb(255, 255, 22);">VOCÊ</font> MAIS <font style="color: rgb(255, 255, 22);">PRECISA ;)</font>-->
-						</h1>
-					</div>	
+								style="color: white; font-weight: bold; font-size: 41px; text-shadow: 1px 1px 5px #575353;">
+								CONSERTE SEU VEÍCULO DE FORMA SIMPLES E FÁCIL.
+							</h1>	
+					</div>	-->
+				</div>	
 				<div class="col-sm-6">
-					<div class="row text-left">
+					<!--<div class="row text-left">
 						<h4 class="thin"
 							style="font-weight: bold; padding-top: 10px; text-shadow: 1px 1px 5px #000000;">
 							<i class="glyphicon glyphicon-ok" style="color: #5cb85c;"></i>
@@ -146,9 +144,23 @@ background-color: #f5f5f5;
 						</h1>
 						
 					</div>
-					
+					<div class="row text-left" style=" margin-top:150px; font-weight: bold; ">
+						<h2 class="thin" style="color: #454545; margin-top: 0px; margin-bottom: 30px;font-weight: bold;border-color: #B6B6B6;">
+							Entre em contato:<br>
+							<font style="color: rgb(255, 255, 22); font-size: 25px;">(11) 2018-1788<br> </font> 
+						</h2>
+					</div>-->
 					</div>
 				<div class="col-sm-6">
+					<div class="page-header text-left">
+							<h1 class="lead"
+								style="color: white; font-weight: bold; font-size: 34px; text-shadow: 1px 1px 5px #575353;">
+								SEU CARRO TE DEIXOU NA MÃO?
+
+							</h1>
+							<h2 class="thin" style="font-size: 27px;  color: white; margin-top: 0px; font-weight: bold;border-color: #B6B6B6;">
+							Podemos enviar um mecânico até você!</h2>	
+					</div>
 					<div class="well" style="background: rgba(255,255,255,0.85);">
 						<form class="form-inline" role="form" action=""
 							method="post" name="form">
@@ -156,7 +168,7 @@ background-color: #f5f5f5;
 							<div class="row">
 								<div class="col-xs-12 col-md-12">
 									<div class=" text-center">
-										<h2 class="thin page-header" style="color: #454545; margin-top: 0px; margin-bottom: 30px;font-weight: bold;border-color: #B6B6B6;">Faça uma simulação e contrate!</h2>
+										<h2 class="thin page-header" style="color: #454545; margin-top: 0px; margin-bottom: 30px;font-weight: bold;border-color: #B6B6B6;">Informe o problema do seu carro</h2>
 									</div>
 								</div>
 							</div>
@@ -181,58 +193,272 @@ background-color: #f5f5f5;
 							-->
 							
 							<div class="row">
-								<div class="col-xs-12 col-md-8" style="">
+							<div class="col-xs-12 col-md-12" style="">
+
 									<div class="text-left" style="width: 100%;">
-										<!--<h4 class="thin" style=" color: #019AA2">Email</h4>-->
+										<!--<h4 class="thin" style=" color: #019AA2">Informe qual o problema do seu veículo</h4>-->
 										<div>
-											<input type="email" class="form-control" id="email" name="email"
-												placeholder="Informe seu email" 
-												style="height: 45px; width: 100%; " required=""
-												title="Informe seu email">
-										</div>
-										<div class="text-left" style="">
-											<p id="email_invalido" style="color:red; display:none;">Email inválido!</p>
-										</div>
-									</div>
-								</div>
-							
-								<div class="col-xs-12 col-md-4" style="">
-									<div class="text-left" style="width: 100%;">
-										<!--<h4 class="thin" style=" color: #019AA2">CEP:</h4>-->
-										<div>
-											<input type="text" class="form-control" id="cep" name="cep"
-												placeholder="Informe seu CEP" 
-												style="height: 45px; width: 100%; " required="" maxlength="8" 
-												title="Informe o cep para localizarmos" onChange="return obterCep();">
-										</div>
-										<div class="text-left" style="">
-											<p id="cep_invalido" style="color: #000; font-size: 12px;">Não sabe seu CEP?<a href="http://www.buscacep.correios.com.br/servicos/dnec/menuAction.do?Metodo=menuLogradouro" target="_blank"> Clique aqui! </a></p>
-										</div>
-										<div class="text-left" style="">
-											<p id="cep_invalido" style="color:red; display:none;">Cep inválido!</p>
+											<select id="select_problema" class="form-control"
+												name="problema" style="height: 45px; width: 100%"
+												title="Informe o problema do seu carro">
+												<!-- ngRepeat: problema in problemas -->
+												<!-- ngRepeat: problema in problemas -->
+												<option value="selecione_o_problema">Selecione o
+													Problema do seu veículo</option>
+													<option value="nao_sei">Não sei</option>
+												<option value="buzina">buzina</option>
+												<option value="cabo_do_velocimetro">cabo do
+													velocímetro</option>
+												<option value="chave_de_seta">chave de seta</option>
+												<option value="chave_de_seta_c_air_bag">chave de
+													seta c/ air bag</option>
+												<option value="cilindro_de_ignicao">cilindro de
+													ignição</option>
+												<option value="distribuidor">distribuidor</option>
+												<option value="farol">farol</option>
+												<option value="interruptor_da_ventoinha_cebolao">interruptor
+													da ventoinha (cebolão)</option>
+												<option value="interruptor_de_farol">interruptor de
+													farol</option>
+												<option value="interruptor_de_marcha_re">interruptor
+													de marcha ré</option>
+												<option value="interruptor_de_oleo_motor">interruptor
+													de óleo motor</option>
+												<option value="interruptor_de_temp_injecao">interruptor
+													de temp. injeção</option>
+												<option value="interruptor_de_temp_painel">interruptor
+													de temp. painel</option>
+												<option value="interruptor_luz_de_freio">interruptor
+													luz de freio</option>
+												<option value="lampada_de_direcao_seta">lâmpada de
+													direção (seta</option>
+												<option value="lampada_de_farol">lâmpada de farol</option>
+												<option value="lampada_de_freio">lâmpada de freio</option>
+												<option value="lampada_de_lanterna">lâmpada de
+													lanterna</option>
+												<option value="lampada_de_re">lâmpada de ré</option>
+												<option value="motor_do_limpador_de_para_brisa">motor
+													do limpador de para-brisa</option>
+												<option value="motor_do_limpador_do_vigia">motor do
+													limpador do vigia</option>
+												<option value="painel_de_instrumentos">painel de
+													instrumentos</option>
+												<option value="valvula_termostatica">valvula
+													termostática</option>
+												<option value="ventilador_do_radiador">ventilador
+													do radiador</option>
+												<option value="vidro_de_acionamento_eletrico">vidro
+													de acionamento elétrico</option>
+												<option value="arvore_flexivel_direcao_cair_bag">árvore
+													flexível direção c/air bag</option>
+												<option value="arvore_flexivel_direcao_sair_bag">árvore
+													flexível direção s/air bag</option>
+												<option value="barra_central_estabilizadora">barra
+													central (estabilizadora)</option>
+												<option value="braco_axial_direcao">braço axial
+													direção</option>
+												<option value="braco_pitman">braço pitman</option>
+												<option value="bucha_da_barra_de_direcao">bucha da
+													barra de direção</option>
+												<option value="caixa_de_direcao_hidraulica">caixa
+													de direção hidráulica</option>
+												<option value="caixa_de_direcao_hidraulica">caixa
+													de direção hidráulica</option>
+												<option value="caixa_de_direcao_mecanica">caixa de
+													direção mecânica</option>
+												<option value="caixa_de_direcao_mecanica">caixa de
+													direção mecânica</option>
+												<option value="coifa_da_caixa_de_direcao">coifa da
+													caixa de direção</option>
+												<option value="coifa_de_homocinetica_externa">coifa
+													de homocinética externa</option>
+												<option value="coifa_de_homocinetica_interna">coifa
+													de homocinética interna</option>
+												<option value="coluna_de_direcao">coluna de direção</option>
+												<option value="correia_da_direcao_hidraulica">correia
+													da direção hidráulica</option>
+												<option value="rolamento_de_roda_dianteira">rolamento
+													de roda dianteira</option>
+												<option value="rolamento_de_roda_traseira">rolamento
+													de roda traseira</option>
+												<option value="terminal_de_direcao">terminal de
+													direção</option>
+												<option value="volante_da_direcao">volante da
+													direção</option>
+												<option value="volante_da_direcao_s_airbag">volante
+													da direção s/ airbag</option>
+												<option value="cabo_de_embreagem">cabo de embreagem</option>
+												<option value="embreagem_kit">embreagem (kit</option>
+												<option value="coletor_de_admissao">coletor de
+													admissão</option>
+												<option value="coletor_de_escapamento">coletor de
+													escapamento</option>
+												<option value="escapamento_final">escapamento final</option>
+												<option value="escapamento_intermediario">escapamento
+													intermediário</option>
+												<option value="escapamento_primario">escapamento
+													primário</option>
+												<option value="junta_coletor_admissao">junta
+													coletor admissão</option>
+												<option value="junta_coletor_escapamento">junta
+													coletor escapamento</option>
+												<option value="selo_dagua_coletor_admissao">selo
+													d´agua coletor admissão</option>
+												<option value="cabo_do_freio_de_mao">cabo do freio
+													de mão</option>
+												<option value="cano_de_freio_roda">cano de freio
+													roda</option>
+												<option value="cilindro_mestre_do_freio">cilindro
+													mestre do freio</option>
+												<option value="cillindro_de_freio_da_roda_traseira">cillindro
+													de freio da roda traseira
+												<option>
+												<option value="corretor_de_frenagem_equalizadora">corretor
+													de frenagem (equalizadora)</option>
+												<option value="flexivel_de_freio_mangote">flexível
+													de freio (mangote)</option>
+												<option value="fluido_de_freio">fluído de freio</option>
+												<option value="freios_4_rodas_c_lonas">freios 4
+													rodas c/ lonas</option>
+												<option value="freios_4_rodas_c_pincas">freios 4
+													rodas c/ pinças</option>
+												<option value="freios_dianteiros">freios dianteiros</option>
+												<option value="freios_traseiros">freios traseiros</option>
+												<option value="hidrovacuo_de_freio">hidrovácuo de
+													freio</option>
+												<option value="lona_de_freio_">lona de freio</option>
+												<option value="pastilha_de_freio_jogo">pastilha de
+													freio (jogo)</option>
+												<option value="pinca_de_freio_reparo">pinça de
+													freio (reparo)</option>
+												<option value="tambor_de_freio_dianteiro">tambor de
+													freio dianteiro</option>
+												<option value="tambor_de_freio_traseiro">tambor de
+													freio traseiro</option>
+												<option value="amortecedor_dianteiro">amortecedor
+													dianteiro</option>
+												<option value="amortecedor_traseiro">amortecedor
+													traseiro</option>
+												<option value="bandeja_dianteira_inferior">bandeja
+													dianteira inferior</option>
+												<option value="bandeja_dianteira_superior">bandeja
+													dianteira superior</option>
+												<option value="bandeja_traseira">bandeja traseira</option>
+												<option value="barra_central_estabilizadora">barra
+													central (estabilizadora)</option>
+												<option value="bieletas_liame">bieletas / liame</option>
+												<option value="braco_axial_direcao">braço axial
+													direção</option>
+												<option value="braco_oscilante_suspensao_dianteira_inferior">braço
+													oscilante suspensão dianteira inferior</option>
+												<option value="braco_oscilante_suspensao_dianteira_superior">braço
+													oscilante suspensão dianteira superior</option>
+												<option value="braco_pitman">braço pitman</option>
+												<option value="braco_tensor_suspensao_dianteira">braço
+													tensor suspensão dianteira</option>
+												<option value="braco_transversal_suspensao_traseira">braço
+													transversal suspensão traseira</option>
+												<option value="bucha_bandeja_dianteira_inferior">bucha
+													bandeja dianteira inferior</option>
+												<option value="bucha_bandeja_dianteira_superior">bucha
+													bandeja dianteira superior</option>
+												<option value="bucha_braco_oscilante_suspensao_dianteira">bucha
+													braço oscilante suspensão dianteira</option>
+												<option value="bucha_da_barra_de_direcao">bucha da
+													barra de direção</option>
+												<option value="bucha_do_agregado">bucha do agregado</option>
+												<option value="bucha_do_eixo_traseiro">bucha do
+													eixo traseiro</option>
+												<option value="coifa_de_homocinetica_externa">coifa
+													de homocinética externa</option>
+												<option value="coifa_de_homocinetica_interna">coifa
+													de homocinética interna</option>
+												<option value="estabilizador_dianteiro">estabilizador
+													dianteiro</option>
+												<option value="estabilizador_traseiro">estabilizador
+													traseiro</option>
+												<option value="feixe_de_molas">feixe de molas</option>
+												<option value="homocinetica_externa">homocinética
+													externa</option>
+												<option value="homocinetica_interna">homocinética
+													interna</option>
+												<option value="manga_de_eixo_dianteiro_c_rolamento">manga
+													de eixo dianteiro c/ rolamento</option>
+												<option value="manga_de_eixo_traseiro">manga de
+													eixo traseiro</option>
+												<option value="mola_helicoidal_dianteira">mola
+													helicoidal dianteira</option>
+												<option value="mola_helicoidal_traseira">mola
+													helicoidal traseira</option>
+												<option value="pivo">pivô</option>
+												<option value="rolamento_de_roda_dianteira">rolamento
+													de roda dianteira</option>
+												<option value="rolamento_de_roda_traseira">rolamento
+													de roda traseira</option>
+												<option value="tensor_de_suspensao_dianteira">tensor
+													de suspensão dianteira</option>
+												<option value="tensor_de_suspensao_traseira">tensor
+													de suspensão traseira</option>
+												<option value="terminal_de_direcao">terminal de
+													direção</option>
+												<option value="torre_de_suspensao_dianteira">torre
+													de suspensão dianteira</option>
+												<option value="torre_de_suspensao_traseira">torre
+													de suspensão traseira</option>
+												<option value="travessa_eixo_traseiro">travessa
+													eixo traseiro</option>
+												<option value="alavanca_de_marchas">alavanca de
+													marchas</option>
+												<option value="alavanca_de_marchas">alavanca de
+													marchas</option>
+												<option value="alavanca_superior">alavanca superior</option>
+												<option value="cambio_automatico">câmbio automático</option>
+												<option value="cambio_mecanico">câmbio mecânico</option>
+												<option value="carter_cambio_automatico">cárter
+													câmbio automático</option>
+												<option value="carter_motor">cárter motor</option>
+												<option value="correia_dentada_distribuicao">correia
+													dentada / distribuição</option>
+												<option value="coxim_do_cambio_central">coxim do
+													câmbio central</option>
+												<option value="coxim_do_cambio_LE">coxim do câmbio
+													L/E</option>
+												<option value="junta_do_carter_cambio_automatico">junta
+													do cárter câmbio automático</option>
+												<option value="rolamento_semi_eixo_intermediario">rolamento
+													semi-eixo intermediário</option>
+												<option value="semi_eixo">semi-eixo</option>
+												<option value="travessa_central_inferior_cambio">travessa
+													central inferior câmbio</option>
+												<option value="travessa_eixo_traseiro">travessa
+													eixo traseiro</option>
+												<option value="alternador">alternador</option>
+												<option value="correia_do">correia do alternador</option>
+											</select>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<div class="row">
-								<div class="col-xs-12 col-md-12" style="padding-top: 10px;">
-									<div class="form-group text-center" style="width: 100%; color: #000000;">
-										<div class="text-left" style="">
-											<p id="cep_cliente"></p>
-										</div>
-									</div>
-
+							<div class="text-left" style="display:none" id="problema">			
+								<p style="color:red">
+								    Selecione um problema ou marque a opção não sei.
+								</p>
+							</div>
+							<div class="text-left" style="width: 100%; margin-top:20px; margin-bottom:20px">			
+								<div class="radio text-left">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="nao-sei" value="nao-sei"  data-dismiss="modal-ligueme">
+								    Não sabe ou não encontrou o problema do seu carro, clique aqui!
+								  </label>
 								</div>
 							</div>
-
 							<div class="row">
 								<div class="col-xs-12 col-md-12" style="padding-top: 10px;">
 									<div class="form-group text-center" style="width: 100%;">
 										<div>
 											<button type="button"  onClick="return pedido()" 
 												class="form-group btn btn-primary text-left"
-												style="width: 100%; font-size: 20px; text-shadow: 1px 1px 1px #575353;">Solicitar Orçamento</button>
+												style="width: 100%; font-size: 20px; text-shadow: 1px 1px 1px #575353;">Conserte seu carro Agora!</button>
 										</div>
 									</div>
 
@@ -244,11 +470,11 @@ background-color: #f5f5f5;
 									<div class=" text-center">
 										<h2 class="" style="color: #454545; margin-top: 0px; margin-top: 10px;font-weight: bold;border-color: #B6B6B6; font-size: 24px;">Apenas <font style="color:#FF9B22; text-shadow: 1px 1px 1px #575353;">R$70,00</font> a hora.</h2>
 									</div>
+									<div>
+										<h2 class="" style="color: #454545; margin-top: 0px; margin-top: 10px;font-weight: bold;border-color: #B6B6B6; font-size: 24px;">Ligue agora:<font style="color:#FF9B22; text-shadow: 1px 1px 1px #575353;">
+										 (11) 2018-1788</font></h2>
+									</div>
 								</div>
-							</div>
-							
-							<div class="row">
-								<div id="valor"></div>
 							</div>
 						</form>
 					</div>
@@ -257,38 +483,6 @@ background-color: #f5f5f5;
 		</div>
 	</div>
 	
-		<!-- /Intro-->
-
-		<!-- /Intro-->
-	<!-- container -->
-	<div class="container">
-		<h2 class="text-center top-space">Quer receber <font style="color:#FF9B22; text-shadow: 1px 1px 1px #575353;">R$20,00 </font>de desconto para reparar seu carro?</h2>
-
-		<h4 class="tagline text-center">Cadastre seu email, e assine nossa newsletter!</h4>
-		<br />
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="row text-center">
-					<form action="newsletter.php" method="post" name="form">
-						<div class="form-group" style="display: inline-block;">
-							<input type="email" placeholder="Insira seu email aqui..."
-								id="email" name="email"
-								class="col-sm-6 form-control popover-dismiss"
-								style="width: 400px; height: 40px;"
-								title="Email inválido"  />
-							<button type="submit" class="btn btn-primary"
-								style="margin-left: 10px;"
-								onclick="return validacaoEmail(form.email)">Enviar</button>
-							<div id="msgemail"></div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<!-- /row -->
-	</div>
-	<!-- /container -->
-	<!-- Fim Conteudo -->
 
 	<!-- Highlights - jumbotron -->
 	<div class="jumbotron">
@@ -298,44 +492,43 @@ background-color: #f5f5f5;
 				<div class="col-md-3 col-sm-6 highlight">
 					<div class="h-caption">
 						<h4>
-							<i class="glyphicon glyphicon-list-alt"></i>Solicite um Orçamento
+							<i class="glyphicon glyphicon-comment"></i>Informe seu problema
 						</h4>
 					</div>
 					<div class="h-body text-center">
 						<p>
-							Preencha o formulário informando o problema do seu veículo e aguarde nosso email de retorno
+							De acordo com seu problema, enviamos uma estimativa de quantas horas serão necessárias para o conserto do veículo
 						</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
 					<div class="h-caption">
 						<h4>
-							<i class="glyphicon glyphicon-calendar"></i>Agende a Manutenção
+							<i class="glyphicon glyphicon-map-marker"></i>Informe o seu local
 						</h4>
 					</div>
 					<div class="h-body text-center">
-						<p>No conforto do seu lar, agende o dia e hora que for mais conveniente para você</p>
+						<p>De acordo com a sua localização enviaremos o mecânico mais próximo para te atender o mais rápido possível</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
 					<div class="h-caption">
 						<h4>
-							<i class="glyphicon glyphicon-credit-card"> </i> Pagamento On-line
+							<i class="glyphicon glyphicon-wrench"> </i> Receba o Mecânico
 						</h4>
 					</div>
 					<div class="h-body text-center">
-						<p>Realize o pagamento on-line no cartão de
-							crédito com facilidade e segurança.</p>
+						<p>Na garagem da sua casa, no estacionamento seu trabalho ou do mercado, nossos mecânicos vão até você</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
 					<div class="h-caption">
 						<h4>
-							<i class="glyphicon glyphicon-star-empty"></i>Avalie o Mecânico
+							<i class="glyphicon glyphicon-thumbs-up"></i>Avalie o Mecânico
 						</h4>
 					</div>
 					<div class="h-body text-center">
-					<p>Ajude nosso sistema a trabalhar sempre com os melhores profissionais</p>
+					<p>Ajude nossa plataforma a trabalhar sempre com os melhores profissionais, avalie o mecânico após o serviço</p>
 					</div>
 				</div>
 			</div>
@@ -347,7 +540,7 @@ background-color: #f5f5f5;
 						<div class="form-group"
 							style="display: inline-block; padding-top: 30px;">
 							<a href="orcamento.html" class="btn btn-primary  btn-lg"
-								role="button" style="">Solicitar Orçamento</a>
+								role="button" style="">Conserte seu carro agora!</a>
 						</div>
 					</div>
 				</div>
@@ -358,55 +551,7 @@ background-color: #f5f5f5;
 	<!-- /Highlights -->
 
 	<!-- Intro --> 
-	<div class="container text-center" style="padding-bottom:30px">
-		<br /> <br />
-		<h2 class="thin">Conheça a Plim Mecânicos</h2>
-		<h3 class="text-center thin">A Plim Mecânicos é forma mais
-			simples e econômica de realizar reparos mecânicos em seu veículo,
-			possuímos uma rede de colaboradores altamente qualificados e
-			experientes.</h3>
-		<div class="col-md-6 col-sm-6 highlight">
-			<!-- <div class="h-caption">
-						<h4>
-							<i class="glyphicon glyphicon-map-marker"></i>Escolha um ponto de
-							retirada
-						</h4>
-					</div> -->
-			<div class="h-body text-center">
-				<h4 class="thin text-justify">
-					Atendemos a domicilio em toda grande São Paulo, nossos preços são
-					cerca de 30% a 60% mais econômicos que qualquer mecânica
-					tradicional, pode consultar! <br />
-				</h4>
-
-				<h4 class="thin text-justify">Quando você realiza um orçamento
-					na Plim Mecânicos, nossa ferramenta utiliza como base o tempo de
-					duração que a peça leva para ser instalada em seu veículo.</h4>
-			</div>
-		</div>
-
-		<div class="col-md-6 col-sm-6 highlight">
-			<!-- <div class="h-caption">
-						<h4>
-							<i class="glyphicon glyphicon-map-marker"></i>Escolha um ponto de
-							retirada
-						</h4>
-					</div> -->
-			<div class="h-body text-center">
-				<h4 class="thin text-justify">
-					Nossos orçamentos são calculados com base em horas trabalhadas, o
-					valor hora na Plim Mecânicos custa R$70,00, não estando incluso a
-					peça de reposição.<br />
-				</h4>
-				<h4 class="thin text-justify">Você tem toda a segurança do
-					PagSeguro para realizar o pagamento no cartão de crédito e caso
-					exista algum problema com a peça instalada, a Plim Mecânicos garante o
-					reparo.</h4>
-			</div>
-		</div>
-		<!-- Button trigger modal -->
-
-	</div>
+	
 	
 	<!--Footer  -->
 	<div id="footer">
@@ -616,6 +761,58 @@ background-color: #f5f5f5;
     </div>
   </div>
 </div>
+
+
+
+<!--Modal posso te ligar-->
+<div class="modal fade" id="modal-ligueme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       <h4 class="modal-title text-center" id="myModalLabel">Avise-me quando posso te ligar</h4>
+      </div>
+      <div class="modal-body">
+		<h2 class="text-center top-space">Receba uma avaliação por telefone</h2>
+
+		<h4 class="tagline text-center">Deixe seu telefone que ligamos para você!</h4>
+		<br />
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="row text-center">
+					<form action="newsletter.php" method="post" name="form">
+						<div class="form-group" style="display: inline-block;">
+							<input type="email" placeholder="Insira seu telefone aqui..."
+								id="email" name="email"
+								class="col-sm-6 form-control popover-dismiss"
+								style="width: 400px; height: 40px;"
+								title="Email inválido"  />
+							<button type="submit" class="btn btn-primary"
+								style="margin-left: 10px;"
+								onclick="return validacaoEmail(form.email)">Enviar</button>
+							<div id="msgemail"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+      </div>
+	      <div class="row">
+				<div class="col-sm-12">
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				      </div>
+	      		</div>
+	      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- -->
+
 
 <div class="container">
 		<div class="modal fade bs-example-modal-sm"  id="modal-load" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
